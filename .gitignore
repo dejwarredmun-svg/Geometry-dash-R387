@@ -1,0 +1,11 @@
+build/
+build-*/
+.cache/
+.vscode/
+*.user
+*.suo
+*.pdb
+*.ilk
+*.obj
+*.dll
+*.geode

@@ -1,0 +1,10 @@
+{
+  "geode": "v5.11.1",
+  "gd": { "win": "2.2081" },
+  "id": "dejwar387.r387-agent",
+  "name": "R387 Agent",
+  "version": "v0.1.0",
+  "developer": "Dejwar387",
+  "description": "Locally converts images into editable Geometry Dash objects with a strict object budget.",
+  "tags": ["editor", "utility", "enhancement", "offline"]
+}
