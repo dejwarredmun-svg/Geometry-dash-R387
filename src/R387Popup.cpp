@@ -289,13 +289,10 @@ void R387Popup::onGenerate(CCObject*) {
     std::size_t inserted = 0;
     for (const auto& pixel : plan.cells) {
         if (inserted >= plan.budget) break; // Final enforcement at the insertion boundary.
-        auto object = GameObject::createWithKey(1);
+        auto object = m_editorUI->m_editorLayer->createObject(1, {startX + static_cast<float>(pixel.x) * cell, startY - static_cast<float>(pixel.y) * cell}, false);
         if (!object) continue;
-        object->setPosition({startX + static_cast<float>(pixel.x) * cell,
-                             startY - static_cast<float>(pixel.y) * cell});
         object->setScale(cell / kTileSize);
         object->setObjectColor({pixel.color.r, pixel.color.g, pixel.color.b});
-        m_editorUI->m_editorLayer->addObject(object);
         ++inserted;
     }
 
