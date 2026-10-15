@@ -295,7 +295,7 @@ void R387Popup::onGenerate(CCObject*) {
                              startY - static_cast<float>(pixel.y) * cell});
         object->setScale(cell / kTileSize);
         object->setObjectColor({pixel.color.r, pixel.color.g, pixel.color.b});
-        m_editorUI->addObject(object);
+        m_editorUI->m_editorLayer->addObject(object);
         ++inserted;
     }
 
